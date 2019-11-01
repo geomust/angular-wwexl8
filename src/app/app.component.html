@@ -1,0 +1,13 @@
+TEST MATRICE adaugare+stergere
+
+<ul>
+	<li *ngFor="let item of items" ngvalue="item">
+		{{item.id}} {{item.nume}}
+		<button  (click)="deleteItem(item)">Delete</button>
+	</li>
+</ul>
+<input #id>
+<input #nume>
+  
+
+<button  (click)="save(id.value,nume.value)">Adaugare</button>
